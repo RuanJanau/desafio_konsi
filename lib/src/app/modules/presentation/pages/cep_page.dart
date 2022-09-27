@@ -66,7 +66,7 @@ class _CepPageState extends State<CepPage> {
                   if (text!.isEmpty) {
                     return 'Digite um Cep';
                   } else if (text.length < 8) {
-                    return 'Cep Icompleto';
+                    return 'Cep icompleto';
                   }
                   return null;
                 },
