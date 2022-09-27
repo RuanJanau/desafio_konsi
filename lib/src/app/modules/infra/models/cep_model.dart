@@ -38,3 +38,5 @@ class CepModel extends CepEntity {
     );
   }
 }
+
+//implementacao da API.
