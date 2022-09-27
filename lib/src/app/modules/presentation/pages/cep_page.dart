@@ -64,7 +64,7 @@ class _CepPageState extends State<CepPage> {
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 validator: (text) {
                   if (text!.isEmpty) {
-                    return 'Digite um cep';
+                    return 'Digite um Cep';
                   } else if (text.length < 8) {
                     return 'Cep Icompleto';
                   }
