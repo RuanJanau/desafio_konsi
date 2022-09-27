@@ -36,7 +36,10 @@ class _CepPageState extends State<CepPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: const Icon(Icons.favorite_border),
+        title: const Text('Localização'),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -48,7 +51,7 @@ class _CepPageState extends State<CepPage> {
                   labelStyle: const TextStyle(
                     color: Colors.green,
                   ),
-                  labelText: 'Digite seu Cep animal',
+                  labelText: 'Digite o Cep ',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8.0)),
                   focusedBorder: OutlineInputBorder(
@@ -57,11 +60,13 @@ class _CepPageState extends State<CepPage> {
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
+                keyboardType: TextInputType.number,
+                autovalidateMode: AutovalidateMode.onUserInteraction,
                 validator: (text) {
                   if (text!.isEmpty) {
                     return 'Digite um cep';
                   } else if (text.length < 8) {
-                    return 'Animal fautou numero ai';
+                    return 'Cep Icompleto';
                   }
                   return null;
                 },
@@ -73,7 +78,8 @@ class _CepPageState extends State<CepPage> {
                   return Container();
                 }
 
-                return Text('Cidade: ${controller.cepEntity!.value.cep}');
+                return Text(
+                    'Cidade: ${controller.cepEntity?.value.localidade}');
               },
             ),
             SizedBox(
@@ -106,4 +112,3 @@ class _CepPageState extends State<CepPage> {
     setState(() {});
   }
 }
-
