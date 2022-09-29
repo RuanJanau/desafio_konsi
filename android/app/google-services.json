@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1084550043143",
+    "project_id": "desafio-konsi",
+    "storage_bucket": "desafio-konsi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084550043143:android:82487fb044b4a4a036fca2",
+        "android_client_info": {
+          "package_name": "com.example.desafio_konsi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084550043143-0bhfakvg5c3mnha4vb6osjg4icebqkqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCspOXsD_EpX23EKMm5BMIOGbnE8lvECe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084550043143-0bhfakvg5c3mnha4vb6osjg4icebqkqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
