@@ -122,6 +122,13 @@ class _CepPageState extends State<CepPage> {
                         icon: const Icon(Icons.search),
                         splashRadius: 25.0,
                       ),
+                      IconButton(
+                        onPressed: () {
+                          Modular.to.pushNamed('/history');
+                        },
+                        icon: const Icon(Icons.history),
+                        splashRadius: 25.0,
+                      ),
                     ],
                   ),
                   RxBuilder(
