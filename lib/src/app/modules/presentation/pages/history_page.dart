@@ -16,6 +16,7 @@ class _HistoryPageState extends State<HistoryPage> {
         centerTitle: true,
         title: const Text('Edereços Pesquisados'),
       ),
+      body: Column(),
     );
   }
 }
