@@ -16,7 +16,9 @@ class HistoryDatasourceImpl implements HistoryDatasource {
           .get()
           .then((QuerySnapshot querySnapshot) {
         for (var doc in querySnapshot.docs) {
-          listHistory.add(HistoryModel.fromDocumentsSnapshot(doc));
+          listHistory.add(
+            HistoryModel.fromDocumentsSnapshot(doc),
+          );
         }
       });
       return listHistory;
