@@ -40,7 +40,8 @@ class _HistoricPageState extends State<HistoryPage> {
                   itemBuilder: (context, index) => ListTile(
                         title: Text("${controller.listHistory[index].cep}"),
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16.0)),
+                          borderRadius: BorderRadius.circular(16.0),
+                        ),
                         tileColor: Colors.accents[index],
                         subtitle: Text(controller.listHistory[index].endereco),
                       ),
