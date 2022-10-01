@@ -18,7 +18,9 @@ class HistoryModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute(Modular.initialRoute,
-            child: ((context, args) => const HistoryPage()))
+        ChildRoute(
+          Modular.initialRoute,
+          child: ((context, args) => const HistoryPage()),
+        )
       ];
 }
