@@ -27,7 +27,7 @@ class _CepPageState extends State<CepPage> {
     super.initState();
   }
 
-  static const CameraPosition _kGooglePlex = CameraPosition(
+  static const _kGooglePlex = CameraPosition(
     target: LatLng(37.42796133580664, -122.085749655962),
     zoom: 12,
   );
@@ -177,5 +177,12 @@ class _CepPageState extends State<CepPage> {
     if (form!.validate()) {}
 
     setState(() {});
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty<CameraPosition>('_kGooglePlex', _kGooglePlex));
   }
 }

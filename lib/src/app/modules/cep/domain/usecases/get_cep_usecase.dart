@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import '../erros/error.dart';
 
 import '../entities/cep_entity.dart';
+import '../erros/error.dart';
 import '../repositories/cep_repository.dart';
 
 abstract class GetCepUsecase {

@@ -1,12 +1,11 @@
 import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
-import '../datasource/cep_datasource.dart';
-
 
 import '../../domain/entities/cep_entity.dart';
 import '../../domain/erros/error.dart';
 import '../../domain/repositories/cep_repository.dart';
+import '../datasource/cep_datasource.dart';
 
 class CepRepositoryImpl implements CepRepository {
   final CepDatasource _datasource;

@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import '../entities/cep_entity.dart';
 
+import '../entities/cep_entity.dart';
 import '../erros/error.dart';
 
 abstract class CepRepository {

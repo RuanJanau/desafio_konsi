@@ -1,11 +1,11 @@
-import 'package:desafio_konsi/src/app/modules/presentation/pages/cep_page.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-import 'modules/domain/usecases/get_cep_usecase.dart';
-import 'modules/external/datasource/cep_datasource_impl.dart';
-import 'modules/infra/repositories/cecp_repository_impl.dart';
-import 'modules/presentation/controller/cep_controller.dart';
+import 'domain/usecases/get_cep_usecase.dart';
+import 'external/datasource/cep_datasource_impl.dart';
+import 'infra/repositories/cep_repository_impl.dart';
+import 'presentation/controller/cep_controller.dart';
+import 'presentation/pages/cep_page.dart';
 
 class CepModule extends Module {
   @override

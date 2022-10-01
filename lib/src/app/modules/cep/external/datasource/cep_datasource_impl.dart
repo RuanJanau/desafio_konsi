@@ -1,7 +1,7 @@
-import '../../infra/datasource/cep_datasource.dart';
 import 'package:dio/dio.dart';
 
 import '../../domain/erros/error.dart';
+import '../../infra/datasource/cep_datasource.dart';
 import '../../infra/models/cep_model.dart';
 
 class CepDatasourceImpl implements CepDatasource {
